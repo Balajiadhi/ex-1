@@ -1,0 +1,177 @@
+body{
+    background-color: tomato;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 16px;
+
+}
+.out{
+    border: 1px dashed;
+    
+    margin: 90px;
+
+}
+
+#myp1{
+    border: 2px solid black;
+}
+
+#numeric{
+    border: 2px solid black;
+    max-width: 250px;
+    max-height: 250px;
+    
+}
+#one{
+    margin: 2px;
+    border: 1px solid black;
+}
+
+#two{
+    margin: 2px;
+    border: 1px solid black;
+}
+
+#three{
+    margin: 2px;
+    border: 1px solid black;
+}
+#four{
+    margin: 2px;
+    border: 1px solid black;
+}
+
+#five{
+    margin: 2px;
+    border: 1px solid black;
+}
+
+#six{
+    margin: 2px;
+    border: 1px solid black;
+}
+
+#seven{
+    margin: 2px;
+    border: 1px solid black;
+}
+
+#eight{
+    margin: 2px;
+    border: 1px solid black;
+}
+
+#nine{
+    margin: 2px;
+    border: 1px solid black;
+}
+
+#zero{
+    margin: 2px;
+    border: 1px solid black;
+}
+
+#decimal{
+    margin: 2px;
+    border: 1px solid black;
+}
+
+#ans{
+    margin: 2px;
+    border: 1px solid black;
+}
+
+#add{
+    margin: 2px;
+    border: 1px solid black;
+}
+
+#sub{
+    margin: 2px;
+    border: 1px solid black;
+}
+
+#di{
+    margin: 2px;
+    border: 1px solid black;
+}
+
+#mul{
+    margin: 2px;
+    border: 1px solid black;
+}
+
+#ac{
+    margin: 2px;
+    border: 1px solid black;
+}
+
+#del{
+    margin: 2px;
+    border: 1px solid black;
+}
+
+#one:hover{
+    border: 1px solid yellow;
+}
+#two:hover{
+    border: 1px solid yellow;
+}
+#three:hover{
+    border: 1px solid yellow;
+}
+#four:hover{
+    border: 1px solid yellow;
+}
+#five:hover{
+    border: 1px solid yellow;
+}
+#six:hover{
+    border: 1px solid yellow;
+}
+#seven:hover{
+    border: 1px solid yellow;
+}
+#eight:hover{
+    border: 1px solid yellow;
+}
+#nine:hover{
+    border: 1px solid yellow;
+
+}
+
+#zero:hover{
+    border: 1px solid yellow;
+}
+
+#add:hover{
+    border: 1px solid red;
+}
+#sub:hover{
+    border: 1px solid palevioletred;
+}
+
+#mul:hover{
+    border: 1px solid orange;
+}
+
+#decimal:hover{
+    border: 1px solid yellow;
+}
+
+#di:hover{
+    border: 1px solid orangered;
+}
+#ans:hover{
+    border: 1px solid blue;
+}
+#ac:hover{
+    border: 1px solid slateblue;
+}
+
+#del:hover{
+    border: 1px solid yellow;
+}
+
+#ac:hover{
+    border: 2px solid greenyellow;
+}

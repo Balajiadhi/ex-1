@@ -1,0 +1,128 @@
+
+#grad{
+    background-image: linear-gradient(to right, red,orange,yellow,green,blue,indigo,violet);
+}
+
+
+.dropbtn{
+    border: 1px solid black;
+    background-color: blue;
+    color: whitesmoke;
+}
+.dropdown{
+    position: absolute;
+    display: inline-block;
+
+}
+
+.dropdown-content{
+    display: none;
+    position: absolute;
+
+}
+.dropdown-content a{
+    color: black;
+    background-color: white;
+    display: block;
+    list-style-type: none;
+}
+.dropdown-content li{
+    list-style-type: none;
+}
+.dropdown-content a:hover{
+    background-color: white;
+
+}
+.dropdown:hover .dropdown-content{
+    display: block;
+}
+
+.mydropdown{
+    position: relative;
+    display: inline-block;
+}
+.mydrop-content{
+    display: none;
+    position: absolute;
+
+}
+
+.mydropdown:hover .mydrop-content{
+    display: block;
+}
+
+.gallery{
+    float: left;
+    border: 1px soild black;
+    margin: 5px;
+    width: auto;
+    height: auto;
+
+
+}
+
+.gallery:hover{
+    border: 2px solid red;
+}
+
+#txt{
+    text-shadow: 2px 2px;
+}
+
+#txt1{
+    border: 1px solid yellow;
+    background-color: yellow;
+    color: black;
+    box-shadow: 10px 10px gray;
+    width: 120px;
+    overflow: scroll;
+}
+#txt1:hover{
+    border-color: red;
+   /* transform: rotate(10deg);
+    */
+    transform: scale(2,2);
+}
+
+#txt2{
+    color: white;
+    width: 150px;
+    transition: 5s;
+    transition-delay: .05ms;
+}
+#txt2:hover{
+    background-color: red;
+    width: 350px;
+    height: 100px;
+}
+
+#txt3{
+    border: 1px solid black;
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    animation-name: example;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes example{
+    from{background-color: red;}
+    to {background-color: rosybrown;}
+}
+
+#txt4{
+    border-bottom: dotted gray;
+    color: black;
+
+}
+
+#to{
+    visibility: hidden;
+    border: 1px solid black;
+    color: white;
+}
+
+#txt4:hover #to{
+    visibility: visible;
+}

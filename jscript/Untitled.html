@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JScripts</title>
+        <meta name="viewport" content="width=widthof device">
+        <meta charset="UTF-8">
+        <meta lang="en">
+        <link rel="" href="">
+        <link rel="Jscript" href="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">
+        <style>
+            #light{
+                border: 1px solid black;
+                background: cornsilk;
+                color: red;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>My First Jscript</h1><br>
+        <p id="myp1"></p>
+        <button id="mybt1" onclick="myfun()">click me</button>
+        <p id="myp2"></p>
+        <button id="mybt2" onclick="myfun1()">Click me</button>
+        <button id="add" onclick="addition()">ADD</button>
+        <p id="myp3"></p>
+        <button onclick="click()" onmouseover="document.getElementById('').style.background= 'blue'" >Click</button>
+        <br><br><p id="light" onmouseover="high()" onmouseout="low()">This is going to be highlighted on moving over this place to have a look.</p>
+        <br><button onclick="som()">sort it </button>
+        <p id="myso"></p>
+        <br><button onclick="arrange()">Arrange</button>
+        <p id="myar"></p>
+
+
+        <script>
+            function high(){
+                document.getElementById("light").style.backgroundColor = "Yellow";
+                
+            }
+            function low(){
+                document.getElementById("light").style.backgroundColor = "cornsilk";
+            }
+
+            function addition(x1,x2){
+                var x3;
+                 x3 = x1 + x2;
+               return(x3);
+                
+            }
+            document.getElementById("myp3").innerHTML = addition(77,88)
+
+            function myfun(){
+                document.getElementById('myp1').innerHTML = "Hello World";
+            }
+        document.getElementById('myp2').innerHTML = document.write("HRU?")
+            function myfun1(){
+                window.alert("You have clicked this button")
+            }
+
+            var a = 50;
+            var b =50;
+            var c = a+b;
+            console.log(c);
+            document.write(c);
+
+            var txt ="Hello";
+            txt += " "+" How are you?";
+            console.log(txt);
+
+            var cars=["Audi","Mazda","Balino","BMW","Ford"];
+            console.log(typeof(cars))
+
+            var person = {name:"Kelly",Age:25, education:"Graduate", job:"MNC", lastname:"John",fullname:function(){
+                return this.name + " "+ this.lastname;
+            }};
+            document.write(person.name);
+            document.write(person.Age);
+            document.write(person["job"]);
+            document.write(person.fullname());
+
+            console.log("Hello World\"This is to be quoted\"");
+
+            console.log(txt.length);
+
+            var str = "Please locate where \'locate\'occurs";
+            var pos = str.indexOf("occurs");
+            var sop = str.search("locate");
+
+            console.log(pos);
+            console.log(sop);
+
+            var typ = str.slice(5,20);
+            var ypt = str.substring(-12,-4);
+            console.log(typ);
+            console.log(ypt);
+
+            var t = new String("John");
+            var u = new String ("John");
+
+            p = (t == u);
+            console.log(p);
+
+           var b = Number.MIN_VALUE;
+             var q = Number.MAX_VALUE;
+             console.log(q);
+             console.log(b);
+
+            var array = ["Bob","Robbery","Celopattra","Ultra"];
+           
+             console.log(array);
+             console.log(typeof(array));
+             console.log(array.length);
+             text = "<ul>";
+             for (i=0; i<array.length; i++){
+                 text += "<li>" + array[i] ;
+             }
+            text += "<ul>";
+            document.write(text);
+            var fruits = ["Banana","Grapes","Cocunut","Jackfruit"];
+            
+            fruits.push("Mango");
+            fruits.pop("Grapes");
+            console.log(fruits.join("*"));
+            fruits.splice(1,0,"Apple","Orange");
+            document.write(fruits);
+
+            var sungroup = ["Suntv","sunnews","Kalaingar","sunmusic","sunlife"];
+            var jayagroup = ["Jayatv","Jmax","Jayanews","Jayamusic"];
+            var channel = sungroup.concat(jayagroup);
+            console.log(channel.length);
+            var so =(channel.sort());
+            console.log(so.reverse());
+
+            var points = [1,50,2,22,66,85,101,44];
+            var lir = [{type:"Mazda", year:2019},{type:"suzuki", year:2016},{type:"Ford", year:2020},
+            {type:"Lancer", year:2008}];
+
+            function som(){
+                points.sort(function(a,b){
+                    return b - a
+                });
+                document.getElementById("myso").innerHTML = points;
+            }
+            document.getElementById("myso").innerHTML = points;
+            
+            displaycars();
+            function arrange(){
+                lir.sort(function(a,b){
+                    var x = a.type.toLowerCase();
+                    var y = b.type.toLowerCase();
+                    if (x > y ){return 1;}
+                    if (x < y){ return -1;}
+                    return 0;
+                });
+                displaycars();
+            }
+       function displaycars(){
+           document.getElementById("myar").innerHTML =
+           lir[0].type + " "+ lir[0].year +"<br>"+
+           lir[1].type + " "+lir[1].year + "<br>"+
+           lir[2].type + " "+lir[2].year;
+       }
+        
+        </script>
+    </body>
+</html>

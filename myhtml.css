@@ -1,0 +1,134 @@
+body{
+    background-color: lightblue;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 16px;
+    background-image: url("https://picsum.photos/seed/picsum/1370/1370");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+h1{
+    text-align: center;
+    color: red;
+}
+
+p{
+    text-align: justify;
+    color: yellow;
+    border: 1px solid black;
+    background-color: blue;
+    margin-left: 85px;
+    padding-left: 25px;
+    text-shadow: 2px 2px 5px red;
+    
+}
+
+div{
+    border: 2px solid greenyellow;
+     margin-left: 75px;
+     padding: 10px 10px 10px 10px;
+     background-color: white;
+    color: black;
+    outline-style: double;
+}
+
+a:active{
+    color: red;
+}
+
+a:visited{
+    color: rgb(44, 44, 63);
+}
+
+a:hover{
+    color: rgb(255, 10, 1);
+    background-color: brown;
+}
+
+a{
+    text-decoration: none;
+    list-style-type: none;
+}
+
+a.link{
+    border: 1px solid black;
+    padding: 2px;
+    text-decoration: none;
+    text-align: center;
+    list-style: none;
+    background-color: blanchedalmond;
+}
+
+table, th,td{
+    border: 2px solid black;
+    border-collapse: collapse;
+    text-align: center;
+    
+}
+
+table{
+    width: 100%;
+    height: 70px;
+}
+
+.head{
+    color: rgb(253, 6, 6);
+    background-color: greenyellow;
+    border: 1px thin greenyellow;
+}
+div.scroll{
+    width: 200px;
+    height: 100px;
+    overflow: scroll;
+}
+
+#myimg{
+    float: right;
+    width: 200px;
+    height: 200px;
+}
+
+.width{
+    max-width: 500px;
+    border: 1px solid greenyellow;
+}
+
+.stat{
+    position: static;
+    border: 1px solid brown;
+}
+
+#relat{
+    position: relative;
+    border: 1px solid palevioletred;
+}
+
+#abs{
+    position: absolute;
+    border: 1px soild red;
+}
+
+#sti{
+    position: sticky;
+    border: 1px solid darkviolet;
+    
+}
+
+.dropdown{
+    position: relative;
+    display: inline-block;
+}
+.dropdown-content{
+    display: none;
+    position: absolute;
+    
+    background-color: #f9f9f9;
+    min-width: 160px;
+
+}
+
+.dropdown:hover .dropdown-content{
+    display: block;
+}
+

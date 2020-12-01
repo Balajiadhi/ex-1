@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Errors in Jscript</title>
+        <meta charset="UTF-8">
+        <meta name="view port" content="width = width of device">
+        <meta lang="en">
+    </head>
+    <body>
+
+        <p>This is try and catch using Errors in Jscript</p>
+        <p id="my"></p>
+        <br><button id="bt1" onclick="deside()">Enter</button>
+        <br><p id="n2"></p>
+
+        <script>
+           //"use strict";
+           var person = {name:"Balaji", qualification:"Ms", full(){return this.name + " "+ this.qualification;}};
+            function myfun(){
+                document.getElementById("my").innerHTML = person.full();
+            }
+            var person1 = {name:"Kannan", qualification:"Phd"}
+            function deside(){
+
+            var x = person.full.call(person1);
+            document.getElementById("my").innerHTML = x;
+            }
+
+            class car{
+                constructor(name, year){
+                    this.name = name;
+                    this.year = year;
+                }
+
+                age(){
+                    var date = new Date();
+                    return date.getFullYear() - this.year;
+                }
+            }
+            var mycar = new car("Ford", 2012);
+            document.getElementById("n2").innerHTML = "My car is " + mycar.age() + " years old.";
+
+        </script>
+    </body>
+</html>

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Balaji Pet foods</title>
+    <meta lang ="en">
+    <link href="D:\IT definite\Ex_Files_Learning_Python_Upd\HTML">
+
+</head>
+<body>
+<div class=""><p>Welcome to the pet store </p></div>
+<pre>Welcome to HTML Programming. All these are already known, but a few text commands are new here lets try to break it. 
+    This is a new from W3 schools</pre>
+<p style="color: red;">I am Red</p>
+<p style="color: blue;">I am Blue</p>
+<p style="color: black; size: 60px;">I am Big</p> 
+<!-- this is a comment -->
+<!-- Text Formatting in HTML-->
+<br>
+<br>
+<p ><b>This text is bold</b></p>
+<br>
+<i>This is in italics</i><br>
+This is <sub>subscript</sub> and <sup>Superscript</sup>
+<p> This is a paragraph<em>is important</em></p>
+<p>This is using <strong>String text</strong></p>
+<p>This is going to delete<del>computer</del>and <ins>new os</ins>to run smoothly</p>
+<!--Blockquote-->
+<p><blockquote>This is a blockquote</blockquote> is a block quotation</p>
+<q>This is normal quotation</q>
+<abbr title="Royal Melbourne Institute of Technology">RMIT</abbr>
+<address>Latrobe street Building 81</address>
+<h3 style="color: tomato;">tomato colour</h3>
+<h4 style="border: blue;">Blue Boder</h4>
+<h3 style="background-color: yellow ;">Rabbit</h3>
+<!--Imgs in html-->
+<br><br>
+<p>This is a floating img on right</p>
+<img src="https://picsum.photos/200/300" alt="a white horse" width="48px" height="48px" style="float: right;" >
+<p>This is a floating img on left </p>
+<img src="https://picsum.photos/200/300" alt="a white horse" width="48px" height="48px" style="float: left;">
+<!--map images in html--><br><br>
+<img src="https://picsum.photos/200/300" alt="a map image" usemap="#workmap">
+<map name="workmap">
+    <area shape="rect" coords="34,44,270,350" target="_blank" href="https://picsum.photos/200/300?grayscale">
+</map>
+<div style="background-image: url("https://picsum.photos/200/300?grayscale");"></div>
+
+<br><br>
+<!--Tables in Html-->
+<table style="padding: 1px; color: black;">
+<tr>
+    <th>company</th>
+    <th>contact</th>
+    <th>country</th>
+</tr>
+<tr>
+    <td>Alfreds Futterkiste</td>
+    <td>Maria Anders</td>
+    <td>Germany</td>
+
+</tr>
+<tr>
+    <td>Centro comercial mortexuma</td>
+    <td>Franciso chang</td>
+    <td>Mexico</td>
+</tr>
+<tr>
+    <td>Ernst Handel</td>
+    <td>Roland Mendel</td>
+    <td>Austria</td>
+</tr>
+<tr>
+    <td>Island Trading</td>
+    <td>Helen Bennett</td>
+    <td>Uk</td>
+</tr>
+</table>
+<!--lists in HTML-->
+<p>This are lists in HTML</p>
+<ul style="list-style: circle;">
+    <li>First Item</li>
+    <li>Second Item</li>
+    <li>Third Item</li>
+    <li>Fourth Item</li>
+</ul>
+<ol>
+    <li>First Item</li>
+    <li>Second Item</li>
+    <li>Third Item</li>
+    <li>Fourth Item</li>
+</ol>
+<dt>
+    <dt>Coffee</dt>
+    <dd>Milk content will be less and caffine will be more un sugared strong</dd>
+    <dt>Tea</dt>
+    <dt>Boost</dt>
+    <dt>Bonvita</dt>
+</dt>
+<!--Difference between div and span-->
+<div style="border: black; size: 1px;">This is going to be div placed block and we should use it only for paragraphs.</div>
+<div style="background-color: chartreuse; border: chocolate; size: 1px;">This is a div with <span style="border: crimson; size: 0.5px;">Span</span></div>
+<!--Iframes are generally used to display webpages with in a webpage-->
+<br><br>
+<iframe src="https://picsum.photos/" title="lorem pixel images" width="95%" height="140px"></iframe>
+<br><br>This text is placed below the ipsum code
+<p id="date1">click me to display</p>
+<!--Canvas in HTML-->
+<canvas id="mycanvas" style="border: black; box-sizing: border-box;" width="200" height="100"></canvas><br><br>
+<canvas id="mygrad" style="border: 1px,soild,black" width="200" height="100"></canvas><br>
+<!--Video-->
+<video width="320" height="320" controls>
+    <source src="C:\Users\HP\Videos\Mookuthi amman.mp4" type="video/mp4">
+        Your browser does not support this video tag
+</video><br>
+<iframe src="https://www.youtube.com/"width="250"height="250" > 
+</iframe>
+<script>
+    document.getElementById("date1").innerHTML = "Hello Welcome to Js";
+    var c = document.getElementById("mycanvas");
+    var ctx = c.getContext("2d");
+    ctx.moveTo(0,0);
+    ctx.lineTo(200,100);
+    ctx.stroke();
+
+    var r = document.getElementById("mygrad");
+    vat rtx = r.getContext("2d");
+
+    var grad =rtx.createLinearGradient(0,0,200,0);
+    grad.addColorStop(0,"red");
+    grad.addColorStop(1,"white");
+
+    rtx.fillStyle = grad;
+    rtx.fillRect(10,10,150,80);
+    
+</script>
+
+</html>

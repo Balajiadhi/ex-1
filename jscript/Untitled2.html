@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Arrays</title>
+        <meta name="viewport" content="width = width of device">
+        <meta charset="UTF-8">
+        <meta lang="en">
+    </head>
+    <body>
+
+        <p id="time"></p>
+        <br>
+        <input id="myn1" type="number" placeholder="Enter your age" value="18">Age<br>
+        <button id="mybut" onclick="fun()">Click me</button><br><p id="v1"></p>
+        <br> <p id="y"></p><br><p id="t"></p><br><p id="c"></p>
+
+
+<script>
+            function fun(){
+                var age, vote;
+                age = Number(document.getElementById("myn1").value);
+                if (isNaN(age)){
+                    vote = "Enter an number";
+                } else{
+                    vote = (age < 18 ) ? "Too Young":"Old Enough";
+                }
+                document.getElementById("v1").innerHTML = vote;
+                
+            }
+            
+
+
+            var num1 = [1,4,45,96,55,88];
+            var num2 = num1.map(myfun);
+            function myfun(value,index, array){
+                return value * 2;
+            }
+
+            var num3 = num2.filter(myfun1);
+            function myfun1(value,index,array){
+                return value > 18;
+            }
+            var sum = num3.reduce(myfun2);
+            function myfun2(total, value, index, array){
+                return total + value ;
+            }
+            var num4 = num1.findIndex(myfun3);
+            function myfun3(value, index, array){
+                return value == 96;
+            }
+            console.log(num2);
+            console.log(num3);
+            console.log(sum);
+            console.log(num4);
+            
+            var e = new Date();
+            console.log(e);
+            document.getElementById("time").innerHTML = e.getDay();
+            console.log(Math.PI);
+            var a = 3.414;
+            console.log(Math.round(a));
+            console.log(Math.ceil(a));
+            console.log(Math.pow(a,8));
+            console.log(Math.sqrt(a));
+            console.log(Math.max(1,50,22,25,60,88,101,0114,10002));
+            console.log(Math.min(1,50,22,25,60,88,101,0114,10002));
+            console.log(Math.random()*10)+1;
+
+           
+            function getrand(min,max){
+                return Math.floor(Math.random()*(min - max)) + max;
+            }
+            console.log(getrand(1,75));
+
+            Boolean(10>8);
+            var age = 25;
+            var votable = (age < 18 )? "Tooyoung": "Old enough";
+            console.log(votable);
+        
+            switch(e.getDay()){
+                
+                case 0:
+                day = "Sunday";
+                break;
+                case 1:
+                day = "Monday";
+                break;
+                case 2:
+                day = "Tuesday";
+                break;
+                case 3:
+                day = "Wednesday";
+                break;
+                case 4:
+                day = "Thursday";
+                break;
+                case 5:day = "Friday";
+                break;
+                case 6: day = "Saturday";
+                break
+                default:
+                day = "None";
+                break;
+            }
+            document.getElementById("y").innerHTML = day;
+            var txt = "";
+
+            var cara = ["Masda","Audi","Ford","Renault","Nissan"];
+            for(i = 0; i < cara.length; i++){
+                txt += cara[i]+"<br>";
+            }
+            document.getElementById("t").innerHTML = txt;
+
+            var cat = [{name:"Persian", age:"3 years"},{name:"Russian", age:" 2 years"},{name:"Indian",age:"5years"}];
+            var x;
+            var text = " ";
+            for(x in cat){
+                text += cat[x] +"<br>";
+
+            }
+            document.getElementById("c").innerHTML = (text);
+            console.log(typeof(text));
+
+            var y = 0;
+            do{
+                y += 1;
+                console.log(y);
+            }while(y < 10);
+
+        </script>
+
+    </body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Clock using HTML</title>
+        <meta lang="en">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width = width of device">
+        <link rel="" href="">
+
+
+    </head>
+    <body>
+        <canvas id="mycanvas" height="500px" width="500px">
+            
+        </canvas>
+        <script>
+            var canvas = document.getElementById("mycanvas");
+            var ctx = canvas.getContext("2d");
+            ctx.beginPath();
+            ctx.arc(95,50,40,0,2 * Math.PI);
+            ctx.stroke();
+        </script>
+    </body>
+</html>
